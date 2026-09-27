@@ -1,5 +1,10 @@
 # Q-DISTILL: Bridging the Multimodal Information Gap in Chest X-ray Triage via Self-Supervised Q-Former Distillation
 
+> **Paper:** Q-DISTILL is part of our work published in **Smart Health** (2026) and presented as an **oral** at **IEEE/ACM CHASE 2026**: *Confidence-gated cloud-edge cascade triage via variational risk minimization for medical imaging* ([DOI](https://doi.org/10.1016/j.smhl.2026.100689)). Companion code: [vrm-edge-triage](https://github.com/Yangxinyee/vrm-edge-triage).
+
+[![Paper](https://img.shields.io/badge/Paper-Smart%20Health%202026-blue)](https://doi.org/10.1016/j.smhl.2026.100689)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 While vision-language models excel in medical imaging, their reliance on matched reports limits utility for image-only triage. We identify a fundamental multimodal information gap in distilling these models to image-only students, where text-dependent features are irrecoverable. We propose **Q-DISTILL**, a self-supervised framework that bridges this gap using MedGemma-generated pseudo-reports as textual proxies. Our approach reveals that foundation models can serve not only as generators but as **knowledge amplifiers**---providing both weak supervision and feature proxies, boosting accuracy from 76.5% to 89.1% while compressing 27B-parameter reasoning into deployable architectures. 
 
 ## Overview
@@ -203,6 +208,22 @@ Q-DISTILL/
 ```
 
 ## Citation
+
+If you use this code, please cite our paper:
+
+```bibtex
+@article{yang2026vrm,
+  title   = {Confidence-gated cloud-edge cascade triage via variational risk minimization for medical imaging},
+  author  = {Yang, Xinye and Zhong, Zhusi and Collins, Scott and Bernstein, Michael and Baird, Grayson and Healey, Terrence and Atalay, Michael and Jayaraman, Mahesh and Wang, Xuyu and Jiao, Zhicheng},
+  journal = {Smart Health},
+  volume  = {41},
+  pages   = {100689},
+  year    = {2026},
+  doi     = {10.1016/j.smhl.2026.100689}
+}
+```
+
+To cite the software itself:
 
 ```bibtex
 @misc{qdistill2025,
